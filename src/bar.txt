@@ -1,0 +1,3 @@
+Hello World!
+Isn't it a good day?
+Suddenly it's raining.
