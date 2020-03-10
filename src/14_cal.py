@@ -30,3 +30,15 @@ it should use today’s date to get the month and year.
 import sys
 import calendar
 from datetime import datetime
+
+
+def renderCal(m=datetime.today().month, y=datetime.today().year):
+    print(calendar.month(int(y), int(m)))
+
+
+if len(sys.argv) > 1:
+    renderCal(*sys.argv[1:3])
+else:
+    print(
+        "Please provide at least one argument\nFormat: 14_cal.py [month] [year]")
+    exit()
